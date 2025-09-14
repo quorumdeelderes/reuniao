@@ -1,97 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 1 - Reverência pelas coisas sagradas</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 5px 10px;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: #16a085;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      font-size: 20px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-5xl mx-auto p-6 space-y-8">
-    <!-- Título -->
-    <header class="text-center">
-      <h1 class="text-3xl font-bold text-blue-900 mb-2">Aula 1 - Reverência pelas coisas sagradas</h1>
-      <p class="text-gray-600">Élder Ulisses Soares - Quórum dos Doze Apóstolos</p>
-    </header>
+<body>
+  <header id="topo">
+    <h1>Reverência pelas coisas sagradas</h1>
+    <p>Élder Ulisses Soares - Quórum dos Doze Apóstolos</p>
+  </header>
 
-    <!-- Botões de ação -->
-    <div class="flex justify-center gap-4">
-      <button onclick="window.print()" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">
-        <i data-lucide="printer"></i> Imprimir
-      </button>
-      <button onclick="exportPDF()" class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700">
-        <i data-lucide="file-text"></i> Exportar PDF
-      </button>
+  <nav>
+    <a href="#tecnologia">📱 Tecnologia e IA</a>
+    <a href="#irreverencia">⚠️ Irreverência</a>
+    <a href="#reunioes">⛪ Reuniões</a>
+    <a href="#montanha">🌄 Topo da Montanha</a>
+    <a href="#testemunho">✨ Testemunho</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card" id="tecnologia">
+      <h2>📱 Uso da Tecnologia e Inteligência Artificial</h2>
+      <p>
+        “Temos muito cuidado ao evitar representar elementos que poderiam distrair nosso foco principal do Pai Celestial e de Seu Filho, Jesus Cristo, e de Seus ensinamentos, inclusive na maneira como aplicamos as ferramentas avançadas oferecidas pela tecnologia, como, por exemplo, o uso da inteligência artificial para gerar conteúdo e imagens.”
+      </p>
+      <p>
+        “Meus queridos irmãos e irmãs, por mais sofisticada que a tecnologia moderna tenha se tornado, ela simplesmente não é capaz de simular a maravilha, o respeito e o assombro encontrados no tipo de reverência que advém da influência do Espírito Santo. Como seguidores de Cristo, devemos ser cuidadosos para não enfraquecer nossa ligação com Deus e Seu Filho ao utilizarmos de maneira inadequada o conteúdo e as imagens gerados por inteligência artificial.”
+      </p>
+      <a href="#topo" class="back-link">⬆ Voltar ao topo</a>
     </div>
 
-    <!-- Citações -->
-    <section class="bg-white p-6 rounded-2xl shadow space-y-4">
-      <h2 class="text-2xl font-semibold flex items-center gap-2 text-blue-700">
-        <i data-lucide="quote"></i> Citações
-      </h2>
-      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
-        “A reverência pelas coisas sagradas promove gratidão genuína, expande a verdadeira felicidade, direciona nossa mente à revelação e traz mais alegria para nossa vida.”
-      </blockquote>
-      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
-        “Na verdade, a reverência não é apenas um aspecto da espiritualidade, é sua essência ﻿— o alicerce sobre o qual a espiritualidade é edificada.”
-      </blockquote>
-    </section>
+    <div class="card" id="irreverencia">
+      <h2>⚠️ Cuidado com a Irreverência</h2>
+      <p>
+        “Infelizmente, vivemos em um mundo onde demonstrar reverência pelas coisas sagradas está se tornando cada vez menos comum. De fato, o mundo celebra a irreverência, como podemos comprovar ao lermos uma matéria sensacionalista, assistirmos a um programa de televisão ou acessarmos a internet.”
+      </p>
+      <p>
+        “A irreverência pode também nos distanciar dos laços que os convênios com Deus fornecem e diminuir nosso senso de responsabilidade diante da Deidade. Consequentemente, corremos o risco de nos importarmos apenas com nosso próprio conforto, satisfazendo nossos apetites incontroláveis e, por fim, alcançando o impuro estado de desprezarmos o que é sagrado — até mesmo a Deus.”
+      </p>
+      <a href="#topo" class="back-link">⬆ Voltar ao topo</a>
+    </div>
 
-    <!-- Escrituras -->
-    <section class="bg-white p-6 rounded-2xl shadow space-y-4">
-      <h2 class="text-2xl font-semibold flex items-center gap-2 text-purple-700">
-        <i data-lucide="book-open"></i> Escrituras
-      </h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li>Êxodo 3:5 — “Tira os teus sapatos de teus pés, porque o lugar em que tu estás é terra santa.”</li>
-        <li>2 Néfi 4:34 — “Ó Senhor, confiei em ti e em ti confiarei sempre. Não porei minha confiança no braço de carne.”</li>
-      </ul>
-    </section>
+    <div class="card" id="reunioes">
+      <h2>⛪ Experiências em Reuniões com Reverência</h2>
+      <p>
+        “Podemos também vivenciar essa transformação espiritual ao participarmos fielmente das reuniões de adoração na Igreja, sintonizando-nos com o Senhor por meio do cântico sincero de hinos sagrados.”
+      </p>
+      <p>
+        “Ao deixarmos de lado as distrações do mundo, como fez Moisés, especialmente nosso telefone celular ou qualquer outra coisa que não esteja em harmonia com esse momento sagrado, seremos capazes de direcionar toda a nossa atenção ao partilharmos do sacramento, com nossa mente e nosso coração voltados ao Salvador, ao Seu sacrifício expiatório e aos nossos próprios convênios.”
+      </p>
+      <a href="#topo" class="back-link">⬆ Voltar ao topo</a>
+    </div>
 
-    <!-- Histórias pessoais -->
-    <section class="bg-white p-6 rounded-2xl shadow space-y-4">
-      <h2 class="text-2xl font-semibold flex items-center gap-2 text-orange-700">
-        <i data-lucide="heart"></i> Histórias
-      </h2>
-      <p class="text-gray-700">O Élder Soares contou a experiência dolorosa de quando precisou enterrar seu segundo filho, que nasceu prematuro e não sobreviveu. Ele relatou como, em reverência e oração, recebeu a certeza espiritual de que tudo ficaria bem se permanecessem fiéis ao evangelho e aos convênios. Essa experiência trouxe consolo e fortaleceu sua fé.</p>
-    </section>
+    <div class="card" id="montanha">
+      <h2>🌄 Experiência no “Topo da Montanha”</h2>
+      <p>
+        “Minha esposa e eu vivenciamos algumas experiências sagradas em reverência, no ‘topo da montanha’, ao aplicarmos esses princípios em nossa vida, que levaram a uma significativa transformação em nosso discipulado.”
+      </p>
+      <p>
+        “Eu me lembro, como se fosse hoje, do momento em que caminhei pelo cemitério, antes de enterrar nosso segundo filho, que havia nascido prematuro e não sobreviveu, enquanto minha esposa ainda estava em recuperação no hospital. (...) O que parecia ser um desafio insuportável na época se transformou em uma experiência sagrada e reverente que nos ajudou a manter nossa fé e fortaleceu nossa confiança nos convênios que fizemos com o Senhor e em Suas promessas para mim e minha família.”
+      </p>
+      <a href="#topo" class="back-link">⬆ Voltar ao topo</a>
+    </div>
 
-    <!-- Tecnologia e IA -->
-    <section class="bg-white p-6 rounded-2xl shadow space-y-4">
-      <h2 class="text-2xl font-semibold flex items-center gap-2 text-red-700">
-        <i data-lucide="cpu"></i> Tecnologia e Inteligência Artificial
-      </h2>
-      <blockquote class="border-l-4 border-red-500 pl-4 italic text-gray-700">
-        “Por mais sofisticada que a tecnologia moderna tenha se tornado, ela simplesmente não é capaz de simular a maravilha, o respeito e o assombro encontrados no tipo de reverência que advém da influência do Espírito Santo.”
-      </blockquote>
-      <blockquote class="border-l-4 border-red-500 pl-4 italic text-gray-700">
-        “Devemos ser cuidadosos para não enfraquecer nossa ligação com Deus e Seu Filho ao utilizarmos de maneira inadequada o conteúdo e as imagens gerados por inteligência artificial.”
-      </blockquote>
-    </section>
+    <div class="card" id="testemunho">
+      <h2>✨ Testemunho Final</h2>
+      <p>
+        “Meus irmãos e irmãs, a reverência pelas coisas sagradas promove gratidão genuína, expande a verdadeira felicidade, direciona nossa mente à revelação e traz mais alegria para nossa vida. (...) Presto testemunho reverentemente dessas verdades no sagrado nome de nosso Salvador e Redentor, Jesus Cristo, amém.”
+      </p>
+      <a href="#topo" class="back-link">⬆ Voltar ao topo</a>
+    </div>
 
-    <!-- Perguntas para debate -->
-    <section class="bg-white p-6 rounded-2xl shadow space-y-4">
-      <h2 class="text-2xl font-semibold flex items-center gap-2 text-green-700">
-        <i data-lucide="help-circle"></i> Perguntas para Debate
-      </h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li>O que significa “tirar os sapatos” em nossa vida moderna? Que hábitos precisamos deixar para pisar em solo sagrado?</li>
-        <li>Como podemos cultivar reverência em nossos lares?</li>
-        <li>De que forma a irreverência no mundo atual afeta nossa vida espiritual?</li>
-        <li>Qual deve ser nosso cuidado no uso da inteligência artificial, segundo os conselhos do Élder Soares?</li>
-        <li>Que experiências pessoais temos de reverência que fortaleceram nossa fé?</li>
-      </ul>
-    </section>
   </div>
-
-  <script>
-    lucide.createIcons();
-
-    function exportPDF() {
-      alert("Para exportar em PDF, utilize a opção 'Salvar como PDF' na janela de impressão.");
-      window.print();
-    }
-  </script>
 </body>
 </html>
