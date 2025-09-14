@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas Quórum de Élderes</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  header {
+    background-color: #4a90e2;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  header a:hover {
+    background-color: #357abd;
+  }
+  iframe {
+    width: 100%;
+    height: calc(100vh - 70px); /* Ajusta altura do iframe subtraindo o topo */
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="aulas/perguntas.html" target="conteudo">Perguntas</a>
+  <a href="aulas/reverencia.html" target="conteudo">Reverência</a>
+</header>
+
+<iframe name="conteudo" src="aulas/perguntas.html"></iframe>
+
+</body>
+</html>
 
