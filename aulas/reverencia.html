@@ -59,6 +59,11 @@
       color: #2c3e50;
       font-size: 20px;
     }
+    .paragraph-ref {
+      font-size: 12px;
+      color: #7f8c8d;
+      margin-bottom: 10px;
+    }
     .back-link {
       display: inline-block;
       margin-top: 15px;
@@ -68,6 +73,22 @@
     }
     .back-link:hover {
       text-decoration: underline;
+    }
+    .print-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e67e22;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .print-button:hover {
+      background: #d35400;
     }
   </style>
 </head>
@@ -88,6 +109,7 @@
   <div class="container">
 
     <div class="card" id="tecnologia">
+      <div class="paragraph-ref">Parágrafo 18-20 do discurso original</div>
       <h2>📱 Uso da Tecnologia e Inteligência Artificial</h2>
       <p>
         “Temos muito cuidado ao evitar representar elementos que poderiam distrair nosso foco principal do Pai Celestial e de Seu Filho, Jesus Cristo, e de Seus ensinamentos, inclusive na maneira como aplicamos as ferramentas avançadas oferecidas pela tecnologia, como, por exemplo, o uso da inteligência artificial para gerar conteúdo e imagens.”
@@ -99,6 +121,7 @@
     </div>
 
     <div class="card" id="irreverencia">
+      <div class="paragraph-ref">Parágrafo 12-15 do discurso original</div>
       <h2>⚠️ Cuidado com a Irreverência</h2>
       <p>
         “Infelizmente, vivemos em um mundo onde demonstrar reverência pelas coisas sagradas está se tornando cada vez menos comum. De fato, o mundo celebra a irreverência, como podemos comprovar ao lermos uma matéria sensacionalista, assistirmos a um programa de televisão ou acessarmos a internet.”
@@ -110,6 +133,7 @@
     </div>
 
     <div class="card" id="reunioes">
+      <div class="paragraph-ref">Parágrafo 30-31 do discurso original</div>
       <h2>⛪ Experiências em Reuniões com Reverência</h2>
       <p>
         “Podemos também vivenciar essa transformação espiritual ao participarmos fielmente das reuniões de adoração na Igreja, sintonizando-nos com o Senhor por meio do cântico sincero de hinos sagrados.”
@@ -121,6 +145,7 @@
     </div>
 
     <div class="card" id="montanha">
+      <div class="paragraph-ref">Parágrafo 34-36 do discurso original</div>
       <h2>🌄 Experiência no “Topo da Montanha”</h2>
       <p>
         “Minha esposa e eu vivenciamos algumas experiências sagradas em reverência, no ‘topo da montanha’, ao aplicarmos esses princípios em nossa vida, que levaram a uma significativa transformação em nosso discipulado.”
@@ -132,6 +157,7 @@
     </div>
 
     <div class="card" id="testemunho">
+      <div class="paragraph-ref">Parágrafo 40-41 do discurso original</div>
       <h2>✨ Testemunho Final</h2>
       <p>
         “Meus irmãos e irmãs, a reverência pelas coisas sagradas promove gratidão genuína, expande a verdadeira felicidade, direciona nossa mente à revelação e traz mais alegria para nossa vida. (...) Presto testemunho reverentemente dessas verdades no sagrado nome de nosso Salvador e Redentor, Jesus Cristo, amém.”
@@ -140,5 +166,8 @@
     </div>
 
   </div>
+
+  <button class="print-button" onclick="window.print()">🖨️ Imprimir / Exportar PDF</button>
+
 </body>
 </html>
