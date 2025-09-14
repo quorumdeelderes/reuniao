@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reverência pelas Coisas Sagradas - Cartões Visuais</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2a2a72;
-      margin-bottom: 20px;
-    }
-
-    .botoes {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .botoes button {
-      margin: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      background-color: #2a2a72;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    .botoes button:hover {
-      background-color: #1a1a50;
-    }
-
-    .cartao {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin: 15px auto;
-      padding: 20px;
-      max-width: 800px;
-      transition: transform 0.2s;
-      display: flex;
-      gap: 15px;
-      align-items: flex-start;
-    }
-
-    .cartao:hover {
-      transform: scale(1.02);
-    }
-
-    .cartao .icone {
-      font-size: 40px;
-      color: #2a2a72;
-      flex-shrink: 0;
-    }
-
-    .cartao h2 {
-      color: #2a2a72;
-      margin-top: 0;
-    }
-
-    .cartao p {
-      line-height: 1.6;
-      margin: 8px 0;
-    }
-
-    .cartao a {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 10px;
-      background-color: #2a2a72;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.2s;
-    }
-
-    .cartao a:hover {
-      background-color: #1a1a50;
-    }
-
-    @media (max-width: 600px) {
-      .cartao {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .cartao .icone {
-        font-size: 35px;
-      }
-
-      .botoes button {
-        width: 90%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverência pelas Coisas Sagradas - Aula 1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  .cartao {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .cartao .icone {
+    font-size: 2rem;
+    color: #4a90e2;
+    flex-shrink: 0;
+    margin-top: 0.3rem;
+  }
+  .cartao h2 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  .cartao p {
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+    color: #555;
+  }
+  .cartao a {
+    display: inline-block;
+    margin-top: 0.3rem;
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  .cartao a:hover {
+    text-decoration: underline;
+  }
+  button {
+    margin: 1rem;
+    padding: 0.7rem 1.2rem;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #357abd;
+  }
+</style>
 </head>
 <body>
 
-  <h1>Reverência pelas Coisas Sagradas</h1>
+<header>
+  <h1>Reverência pelas Coisas Sagradas - Élder Ulisses Soares</h1>
+</header>
 
-  <div class="botoes">
-    <button onclick="window.print()"><i class="fas fa-print"></i> Imprimir</button>
-    <button onclick="exportHTML()"><i class="fas fa-file-export"></i> Exportar HTML</button>
-  </div>
+<div class="container">
 
   <!-- Cartão 1 -->
   <div class="cartao" id="p1">
-    <div class="icone"><i class="fas fa-lightbulb"></i></div>
+    <div class="icone"><i class="fas fa-star"></i></div>
     <div>
       <h2>Introdução: A importância da reverência</h2>
-      <p>O Élder Soares destaca como a reverência pelas coisas sagradas promove gratidão genuína, expande a verdadeira felicidade, direciona nossa mente à revelação e traz mais alegria para nossa vida.</p>
+      <p><strong>Parágrafo 1:</strong> A reverência pelas coisas sagradas promove gratidão genuína, expande a verdadeira felicidade, direciona nossa mente à revelação e traz mais alegria para nossa vida.</p>
       <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p1" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
@@ -128,7 +103,7 @@
     <div class="icone"><i class="fas fa-mountain"></i></div>
     <div>
       <h2>O exemplo de Moisés no Monte Horebe</h2>
-      <p>Moisés vê a sarça ardente e é instruído a tirar os sapatos por estar em terra santa, demonstrando reverência, humildade e admiração.</p>
+      <p><strong>Parágrafo 2:</strong> Moisés vê a sarça ardente e é instruído a tirar os sapatos por estar em terra santa, demonstrando reverência, humildade e admiração.</p>
       <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p2" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
@@ -137,8 +112,8 @@
   <div class="cartao" id="p3">
     <div class="icone"><i class="fas fa-book"></i></div>
     <div>
-      <h2>O significado da palavra "reverência"</h2>
-      <p>A palavra “reverência” vem do latim “revereri”, que significa ficar em estado de admiração. No evangelho, envolve respeito profundo, amor e gratidão.</p>
+      <h2>Significado da palavra "reverência"</h2>
+      <p><strong>Parágrafo 3:</strong> A palavra “reverência” vem do latim "revereri", que significa ficar em estado de admiração. Reflete respeito profundo, amor e gratidão pelo que é sagrado.</p>
       <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p3" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
@@ -147,8 +122,8 @@
   <div class="cartao" id="p4">
     <div class="icone"><i class="fas fa-heart"></i></div>
     <div>
-      <h2>A reverência como essência da espiritualidade</h2>
-      <p>A reverência é a essência da espiritualidade, o alicerce que cria conexão pessoal com o divino.</p>
+      <h2>Reverência como essência da espiritualidade</h2>
+      <p><strong>Parágrafo 4:</strong> A reverência pelo que é sagrado é a essência da espiritualidade, refletindo nosso amor e proximidade com o Pai Celestial e Jesus Cristo.</p>
       <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p4" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
@@ -158,8 +133,8 @@
     <div class="icone"><i class="fas fa-robot"></i></div>
     <div>
       <h2>Aplicando a reverência na tecnologia e IA</h2>
-      <p>O Élder Soares ensina a identificar princípios do evangelho que orientem o uso da inteligência artificial e a buscar a companhia do Espírito Santo.</p>
-      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p5" target="_blank">Ver trecho oficial</a>
+      <p><strong>Parágrafos 10-11:</strong> Devemos ser cuidadosos ao usar tecnologia e inteligência artificial para não enfraquecer nossa ligação com Deus e Jesus Cristo. A inspiração do Espírito Santo não pode ser substituída pelo “braço de carne”.</p>
+      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p10" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
 
@@ -168,8 +143,8 @@
     <div class="icone"><i class="fas fa-exclamation-triangle"></i></div>
     <div>
       <h2>Cuidado com a irreverência</h2>
-      <p>A irreverência nos distancia de Deus e dos convênios, e promove os objetivos do adversário.</p>
-      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p6" target="_blank">Ver trecho oficial</a>
+      <p><strong>Parágrafos 7-8:</strong> A irreverência pode afastar-nos de convênios com Deus, gerar descuido na conduta e nos levar a desprezar o que é sagrado, inclusive nossa natureza divina.</p>
+      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p7" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
 
@@ -178,8 +153,8 @@
     <div class="icone"><i class="fas fa-mountain-sun"></i></div>
     <div>
       <h2>Experiências de reverência no "topo da montanha"</h2>
-      <p>O Élder Soares compartilha experiências pessoais de sua esposa e dele, que transformaram seu discipulado.</p>
-      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p7" target="_blank">Ver trecho oficial</a>
+      <p><strong>Parágrafos 14-15:</strong> O Élder Soares compartilha experiências pessoais de oração e reverência com sua esposa durante momentos difíceis, que fortaleceram sua fé e confiança nos convênios com Deus.</p>
+      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p14" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
 
@@ -188,31 +163,24 @@
     <div class="icone"><i class="fas fa-church"></i></div>
     <div>
       <h2>Participando das reuniões com reverência</h2>
-      <p>Participar fielmente das reuniões de adoração, cantar hinos e deixar distrações de lado promove renovação espiritual.</p>
-      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p8" target="_blank">Ver trecho oficial</a>
+      <p><strong>Parágrafo 13:</strong> Participar das reuniões da Igreja com reverência, deixando de lado distrações, fortalece a comunhão com o Salvador e torna o Dia do Senhor mais significativo.</p>
+      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p13" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
 
   <!-- Cartão 9 -->
   <div class="cartao" id="p9">
-    <div class="icone"><i class="fas fa-hand-holding-heart"></i></div>
+    <div class="icone"><i class="fas fa-pray"></i></div>
     <div>
       <h2>Testemunho do Élder Soares</h2>
-      <p>Testifica que incorporar a reverência diariamente aprofunda humildade, compreensão da vontade de Deus e confiança nos convênios.</p>
-      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p9" target="_blank">Ver trecho oficial</a>
+      <p><strong>Parágrafo 18:</strong> O Élder Soares testemunha que cultivar a reverência diariamente nos aproxima de Deus e Jesus Cristo, fortalecendo nossa humildade e confiança nas promessas divinas.</p>
+      <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/51soares?lang=por#p18" target="_blank">Ver trecho oficial</a>
     </div>
   </div>
 
-  <script>
-    function exportHTML() {
-      const content = document.documentElement.outerHTML;
-      const blob = new Blob([content], {type: "text/html"});
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "discurso_reverencia_visual.html";
-      a.click();
-    }
-  </script>
+</div>
+
+<button onclick="window.print()">Imprimir/Exportar</button>
 
 </body>
 </html>
