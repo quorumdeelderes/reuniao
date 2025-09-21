@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Presença</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Presença Ala vila Gois</h1>
+
+        <div class="counter-display">
+            <h2 id="counter">0</h2>
+        </div>
+
+        <div class="controls">
+            <button id="btn-minus" class="btn btn-minus">-</button>
+            <button id="btn-plus" class="btn btn-plus">+</button>
+        </div>
+
+        <div class="actions">
+            <button id="btn-reset" class="btn btn-reset">Zerar</button>
+            <button id="btn-send" class="btn btn-send">Enviar por WhatsApp</button>
+        </div>
+
+        <!-- Modal para inserir número do WhatsApp -->
+        <div id="whatsappModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Enviar Contagem por WhatsApp</h3>
+                <p>Total de presenças: <strong id="totalCount">0</strong></p>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Número do WhatsApp:</label>
+                    <input type="tel" id="phoneNumber" placeholder="Ex: 5511999999999" required>
+                    <small>Digite o número com código do país (55 para Brasil)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem personalizada (opcional):</label>
+                    <textarea id="message" rows="3" placeholder="Adicione uma mensagem personalizada..."></textarea>
+                </div>
+
+                <div class="modal-actions">
+                    <button id="btn-back" class="btn btn-back">Voltar</button>
+                    <button id="btn-confirm-send" class="btn btn-send">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
