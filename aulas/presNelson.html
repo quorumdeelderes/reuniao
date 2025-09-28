@@ -23,20 +23,46 @@
       margin-bottom: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
     .citacao:hover {
       transform: translateY(-4px);
     }
-    .citacao p {
+    .quote-image {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .quote-content {
+      flex: 1;
+    }
+    .quote-content p {
       font-size: 1.1em;
       color: #34495e;
       margin: 0 0 10px 0;
+      font-style: italic;
     }
-    .citacao span {
+    .quote-content span {
       display: block;
       text-align: right;
       font-weight: bold;
       color: #16a085;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .citacao {
+        flex-direction: column;
+        text-align: center;
+      }
+      .quote-image {
+        width: 100px;
+      }
+      .quote-content span {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -44,160 +70,811 @@
   <h1>Citações do Presidente Russell M. Nelson</h1>
 
   <div class="citacao">
-    <p>“O Senhor ama esforço, porque o esforço traz crescimento.”</p>
-    <span>Russell M. Nelson</span>
+    <img src="photos/2J4C22HROA4ZIUXBMJPBENT76A.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Senhor ama esforço, porque o esforço traz crescimento.”</p>
+      <span>Conferência Geral, abril de 2025</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“A alegria que sentimos tem pouco a ver com as circunstâncias de nossa vida e muito a ver com o foco de nossa vida.”</p>
-    <span>Russell M. Nelson</span>
+    <img src="photos/3XRHCH2HJM3375SQZFO6SN6Y6M.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A alegria que sentimos tem pouco a ver com as circunstâncias de nossa vida e muito a ver com o foco de nossa vida.”</p>
+      <span>Conferência Geral, abril de 2023</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O Salvador sempre nos convida a segui-Lo, e a decisão de segui-Lo é a mais importante que podemos tomar.”</p>
-    <span>Russell M. Nelson</span>
-  </div>
-
-  <!-- Aqui continuam as mais de 30 citações que já foram inseridas -->
-
-  <div class="citacao">
-    <p>“Agora é o tempo de aprender, arrepender-se e abençoar os outros.”</p>
-    <span>Fonte: Now Is the Time — <a href="https://www.churchofjesuschrist.org/study/general-conference/2022/04/58nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/09nat-Mormon-100th-top-tlgq-mediumSquareAt3X.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Salvador sempre nos convida a segui-Lo, e a decisão de segui-Lo é a mais importante que podemos tomar.”</p>
+      <span>Conferência Geral, abril de 2022</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Agora é o tempo de deixar de lado a amargura e enterrar as armas de guerra.”</p>
-    <span>Fonte: Peacemakers Needed — <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/04/47nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/CMNNQV2SGOUHSO7U5L7XGLA6CM.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Quando fazemos e guardamos convênios com Deus, podemos ter confiança que nasce do Espírito.”</p>
+      <span>Conferência Geral, abril de 2025</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Quando nos empenhamos em caridade e virtude, nossa confiança diante de Deus aumenta.”</p>
-    <span>Fonte: Confidence in the Presence of God — <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/Cover-RMN_Atonement_0001.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Imaginem o consolo de ter confiança na presença de Deus!”</p>
+      <span>Conferência Geral, abril de 2025</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“A fé em Jesus Cristo é o maior poder disponível a nós nesta vida.”</p>
-    <span>Fonte: Drawing the Power of Jesus Christ into Our Lives — <a href="https://www.churchofjesuschrist.org/study/general-conference/2017/04/drawing-the-power-of-jesus-christ-into-our-lives?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/crop-194th_annual_general_conference_russell_m_nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Andar na vereda do convênio, aliado ao arrependimento diário, alimenta o impulso espiritual positivo.”</p>
+      <span>Conferência Geral, abril de 2022</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O Senhor fará milagres em sua vida se acreditarem Nele, sem duvidar.”</p>
-    <span>Fonte: The Power of Spiritual Momentum — <a href="https://www.churchofjesuschrist.org/study/general-conference/2022/04/47nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/download.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Ponham fim ao conflito em sua vida pessoal.”</p>
+      <span>Conferência Geral, abril de 2022</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Pensem de forma celestial — o plano do Pai Celestial é fabuloso!”</p>
-    <span>Fonte: Think Celestial! — <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/51nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/FJR5OGKWTBGG7PTM6HTGUOGPGI.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Caridade é o antídoto para a contenda. A caridade é o dom espiritual que nos ajuda a abandonar o homem natural, que é egoísta, defensivo, orgulhoso e invejoso.”</p>
+      <span>Conferência Geral, abril de 2023</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O templo é vital para a restauração do evangelho em sua plenitude.”</p>
-    <span>Fonte: The Temple and Your Spiritual Foundation — <a href="https://www.churchofjesuschrist.org/study/general-conference/2021/10/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (1).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Jesus Cristo é o maior poder disponível para nós nesta vida.”</p>
+      <span>Conferência Geral, abril de 2021</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“As ordenanças do templo nos enchem de poder e força.”</p>
-    <span>Fonte: The Temple and Your Spiritual Foundation — <a href="https://www.churchofjesuschrist.org/study/general-conference/2021/10/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (2).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Permitam que Deus prevaleça em sua vida.”</p>
+      <span>Conferência Geral, outubro de 2020</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Faça do arrependimento diário parte de sua vida — é a chave para maior felicidade.”</p>
-    <span>Fonte: We Can Do Better and Be Better — <a href="https://www.churchofjesuschrist.org/study/general-conference/2019/04/36nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (3).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A vida sem Deus é uma vida cheia de medo. A vida com Deus é uma vida cheia de paz.”</p>
+      <span>Conferência Geral, outubro de 2020</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Nunca esperem até que seja perfeito — agora é o tempo de aprender e agir.”</p>
-    <span>Fonte: Now Is the Time — <a href="https://www.churchofjesuschrist.org/study/general-conference/2022/04/58nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (4).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O evangelho de Jesus Cristo está cheio de Seu poder, que está disponível a cada filho ou filha de Deus que O busque sinceramente.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Permitam que o Senhor faça mais de vocês do que podem fazer sozinhos.”</p>
-    <span>Fonte: Drawing the Power of Jesus Christ into Our Lives — <a href="https://www.churchofjesuschrist.org/study/general-conference/2017/04/drawing-the-power-of-jesus-christ-into-our-lives?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (5).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Jesus Cristo nos impulsiona a fazer coisas que, de outra forma, não faríamos.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Fixem seu foco em Jesus Cristo e convidem o Espírito para suas vidas.”</p>
-    <span>Fonte: Make Time for the Lord — <a href="https://www.churchofjesuschrist.org/study/general-conference/2021/10/58nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (6).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A oração é a chave para nos conectarmos com Deus e recebermos direção divina.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Alegrem-se no Senhor; alegrem-se em Cristo.”</p>
-    <span>Fonte: Christ Is Risen; Faith in Him Will Move Mountains — <a href="https://www.churchofjesuschrist.org/study/general-conference/2021/04/36nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images (7).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O arrependimento verdadeiro nos aproxima de Cristo e nos permite sentir paz.”</p>
+      <span>Conferência Geral, outubro de 2015</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O evangelho de Jesus Cristo traz poder para lidar com as provações deste mundo.”</p>
-    <span>Fonte: Drawing the Power of Jesus Christ into Our Lives — <a href="https://www.churchofjesuschrist.org/study/general-conference/2017/04/drawing-the-power-of-jesus-christ-into-our-lives?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/images.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada dia é uma oportunidade para demonstrar amor e serviço ao próximo.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Confiem no Senhor; Ele os guiará e fortalecerá.”</p>
-    <span>Fonte: The Lord Jesus Christ Will Come Again — <a href="https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/KJLFGPXKOYQZ5LQDUX5RWXN7FA.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Confiança em Deus nos dá coragem mesmo nas circunstâncias mais difíceis.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O Senhor nos chama a prepara-nos para Sua vinda.”</p>
-    <span>Fonte: The Lord Jesus Christ Will Come Again — <a href="https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/MNAVUJVJALNQESVHW6HCVH23SQ.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O estudo das escrituras fortalece nossa fé e nos guia pelo caminho certo.”</p>
+      <span>Conferência Geral, abril de 2014</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Tragam a casa do Senhor mais perto de nossos membros, para que possam frequentar o templo com mais frequência.”</p>
-    <span>Fonte: Mensagens sobre templos — <a href="https://www.churchofjesuschrist.org/study/general-conference/2021/04?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/nelson (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A paciência e a diligência em cumprir convênios trazem bênçãos espirituais duradouras.”</p>
+      <span>Conferência Geral, abril de 2013</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Permitam que Deus prevaleça em sua vida.”</p>
-    <span>Fonte: October 2020 address — <a href="https://www.churchofjesuschrist.org/study/general-conference/2020/10?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/nelson_oaks_eyring_press_conference.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Quando ajudamos os necessitados, estamos servindo a Cristo diretamente.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“A vida com Deus é uma vida cheia de paz.”</p>
-    <span>Fonte: October 2020 address — <a href="https://www.churchofjesuschrist.org/study/general-conference/2020/10?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé e a ação devem caminhar juntas; sem ação, a fé é incompleta.”</p>
+      <span>Conferência Geral, abril de 2015</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Façam convênios e honrem-nos; eles abrirão o caminho para bênçãos eternas.”</p>
-    <span>Fonte: Várias mensagens — <a href="https://www.churchofjesuschrist.org/study/general-conference?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/President-Nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O amor verdadeiro é incondicional e perdoa mesmo quando o outro falha.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Os missionários servem com a esperança de tornar a vida de outros melhor.”</p>
-    <span>Fonte: Mensagem e mídia — <a href="https://www.churchofjesuschrist.org/media" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/Russell_M_Nelson_(cropped2) (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A gratidão transforma o coração e nos aproxima de Deus.”</p>
+      <span>Conferência Geral, outubro de 2017</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“A fé crescerá para mover as montanhas da aflição em sua vida.”</p>
-    <span>Fonte: The Power of Spiritual Momentum — <a href="https://www.churchofjesuschrist.org/study/general-conference/2022/04/47nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/Russell_M_Nelson_(cropped2).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A obediência aos mandamentos traz proteção espiritual e paz interior.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Caridade e virtude abrem caminho para confiança perante Deus.”</p>
-    <span>Fonte: Confidence in the Presence of God — <a href="https://www.churchofjesuschrist.org/study/general-conference/2025/04/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/russell_m_nelson.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos nos esforçar para viver de forma digna e santificada, sempre buscando a presença de Deus.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Andem na vereda do convênio; é o caminho para vida eterna.”</p>
-    <span>Fonte: Mensagens sobre a vereda do convênio — <a href="https://www.churchofjesuschrist.org/study/general-conference?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/Russell_M._Nelson.png" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada pequena decisão de fazer o bem cria um efeito positivo em nossa vida e na vida dos outros.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Conversem honestamente, com respeito e dignidade, mesmo quando discordarem.”</p>
-    <span>Fonte: Peacemakers Needed — <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/04/47nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/russell_nelson_official_portrait_2018 (1).webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Não há nada mais importante do que cultivar um relacionamento pessoal com o Salvador.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“O Salvador sofreu para que pudesse confortar e curar-nos.”</p>
-    <span>Fonte: Think Celestial! e outras mensagens — <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/51nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/russell_nelson_official_portrait_2018.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A esperança em Cristo nos dá força para superar os desafios mais difíceis.”</p>
+      <span>Conferência Geral, abril de 2021</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Este é o tempo de preparar-se para a Segunda Vinda do Senhor.”</p>
-    <span>Fonte: The Lord Jesus Christ Will Come Again — <a href="https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/VX237EUHHTHC5TJGNNRWFNX5JM.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A música sacra e os hinos elevam o espírito e nos ajudam a sentir a paz de Deus.”</p>
+      <span>Conferência Geral, outubro de 2017</span>
+    </div>
   </div>
 
   <div class="citacao">
-    <p>“Encontrem descanso ao superar o mundo pelo poder de Jesus Cristo.”</p>
-    <span>Fonte: Overcome the World and Find Rest — <a href="https://www.churchofjesuschrist.org/study/general-conference/2022/10/39nelson?lang=eng" target="_blank">churchofjesuschrist.org</a></span>
+    <img src="photos/2J4C22HROA4ZIUXBMJPBENT76A.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O serviço aos outros é a expressão mais pura do amor cristão.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/3XRHCH2HJM3375SQZFO6SN6Y6M.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O perdão liberta nossa alma e nos aproxima de Cristo.”</p>
+      <span>Conferência Geral, outubro de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/09nat-Mormon-100th-top-tlgq-mediumSquareAt3X.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“As dificuldades da vida podem se tornar oportunidades de crescimento espiritual.”</p>
+      <span>Conferência Geral, abril de 2014</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/CMNNQV2SGOUHSO7U5L7XGLA6CM.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos ser exemplos de retidão, mesmo quando ninguém está olhando.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Cover-RMN_Atonement_0001.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Jesus Cristo nos dá poder para superar tentações e desafios.”</p>
+      <span>Conferência Geral, outubro de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/crop-194th_annual_general_conference_russell_m_nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Senhor nos conhece individualmente e deseja guiar cada um de nós.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/download.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A disciplina espiritual diária fortalece nossa capacidade de ouvir a voz de Deus.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/FJR5OGKWTBGG7PTM6HTGUOGPGI.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A bondade que demonstramos aos outros é refletida de volta em nossa própria vida.”</p>
+      <span>Conferência Geral, abril de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (1).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada filho de Deus tem potencial ilimitado quando confiamos e seguimos o Senhor.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (2).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A humildade nos permite receber revelação e orientação divina.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (3).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O arrependimento não apenas limpa nossos erros, mas nos transforma.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (4).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A paciência é uma virtude que nos permite suportar provas sem perder a fé.”</p>
+      <span>Conferência Geral, abril de 2014</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (5).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Nossa esperança deve estar firmada em Cristo, não nas circunstâncias temporais.”</p>
+      <span>Conferência Geral, abril de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (6).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A oração sincera abre portas que nenhuma outra ação pode abrir.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (7).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Espírito Santo é nosso conselheiro constante e guia fiel.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A bondade diária e o serviço aos outros preparam-nos para a eternidade.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/KJLFGPXKOYQZ5LQDUX5RWXN7FA.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos cultivar pensamentos puros e sentimentos elevados para atrair o Espírito.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/MNAVUJVJALNQESVHW6HCVH23SQ.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A verdade sempre prevalecerá, mesmo quando confrontada com falsidade.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Seguir os mandamentos traz liberdade verdadeira, não restrição.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson_oaks_eyring_press_conference.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada ato de fé fortalece nossa relação com o Salvador.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A gratidão diária transforma pequenas bênçãos em grande alegria espiritual.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/President-Nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A obediência diária é o caminho mais seguro para experimentar a paz de Deus.”</p>
+      <span>Conferência Geral, abril de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M_Nelson_(cropped2) (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O amor que sentimos pelo próximo é um reflexo do amor de Cristo por nós.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M_Nelson_(cropped2).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada desafio enfrentado com fé fortalece nosso caráter espiritual.”</p>
+      <span>Conferência Geral, outubro de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/russell_m_nelson.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos viver de maneira que cada ação glorifique a Deus.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M._Nelson.png" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé verdadeira leva à ação e produz frutos eternos.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/russell_nelson_official_portrait_2018 (1).webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A bondade e a misericórdia transformam corações e lares.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/VX237EUHHTHC5TJGNNRWFNX5JM.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos ser instrumentos nas mãos de Deus para abençoar os outros.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/2J4C22HROA4ZIUXBMJPBENT76A.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A vida é uma preparação contínua para retornar à presença do nosso Pai Celestial.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/3XRHCH2HJM3375SQZFO6SN6Y6M.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O arrependimento nos dá a oportunidade de começar de novo a cada dia.”</p>
+      <span>Conferência Geral, outubro de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/09nat-Mormon-100th-top-tlgq-mediumSquareAt3X.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O estudo diligente das escrituras abre a mente e fortalece a fé.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/CMNNQV2SGOUHSO7U5L7XGLA6CM.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A oração consistente nos aproxima de Cristo e nos guia em todas as decisões.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Cover-RMN_Atonement_0001.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O serviço ao próximo é o caminho mais seguro para desenvolver amor e compaixão.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/crop-194th_annual_general_conference_russell_m_nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A confiança em Deus nos dá coragem para enfrentar qualquer adversidade.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/download.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A gratidão transforma nosso coração e nos torna mais receptivos às bênçãos do Senhor.”</p>
+      <span>Conferência Geral, outubro de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/FJR5OGKWTBGG7PTM6HTGUOGPGI.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Jesus Cristo é a força que nos sustenta em meio às tempestades da vida.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (1).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A humildade nos permite aprender e crescer espiritualmente.”</p>
+      <span>Conferência Geral, abril de 2015</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (2).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos cultivar pensamentos e palavras que elevem o espírito e edifiquem os outros.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (3).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Senhor nos dá forças proporcionais às nossas provações.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (4).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada ato de bondade tem um efeito duradouro na vida de alguém.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (5).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A paciência e a perseverança nos aproximam das bênçãos eternas.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (6).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A vida com propósito nos ajuda a encontrar significado mesmo nas pequenas coisas.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (7).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé sem ação é incompleta; devemos demonstrar nossa fé em tudo que fazemos.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A oração sincera traz respostas e orientação divinas.”</p>
+      <span>Conferência Geral, abril de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/KJLFGPXKOYQZ5LQDUX5RWXN7FA.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Espírito Santo é um amigo constante que nos guia pelo caminho certo.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/MNAVUJVJALNQESVHW6HCVH23SQ.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada dia é uma oportunidade para escolher fazer o bem e fortalecer nossa fé.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A confiança em Deus nos ajuda a superar medos e incertezas.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson_oaks_eyring_press_conference.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O amor verdadeiro é paciente, altruísta e perdoa sempre.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos ser exemplos vivos do evangelho de Jesus Cristo.”</p>
+      <span>Conferência Geral, outubro de 2016</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/President-Nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O arrependimento e a humildade nos permitem receber o perdão de Deus.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M_Nelson_(cropped2) (1).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Senhor nos fortalece quando nos esforçamos para fazer o que é certo.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M_Nelson_(cropped2).jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A bondade que damos volta a nós multiplicada.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/russell_m_nelson.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada decisão guiada pelo Espírito Santo nos aproxima da paz eterna.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Russell_M._Nelson.png" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O estudo das escrituras nos dá sabedoria e compreensão espiritual.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/russell_nelson_official_portrait_2018 (1).webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos cultivar uma vida de oração, gratidão e serviço.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/russell_nelson_official_portrait_2018.webp" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Cristo nos dá esperança mesmo em momentos de desespero.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/VX237EUHHTHC5TJGNNRWFNX5JM.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada pequeno ato de amor tem impacto eterno.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/2J4C22HROA4ZIUXBMJPBENT76A.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A vida é mais significativa quando vivida para servir e abençoar os outros.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/3XRHCH2HJM3375SQZFO6SN6Y6M.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A alegria vem quando seguimos o Salvador fielmente.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/09nat-Mormon-100th-top-tlgq-mediumSquareAt3X.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A obediência aos mandamentos nos protege e nos conduz à felicidade.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/CMNNQV2SGOUHSO7U5L7XGLA6CM.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O perdão é essencial para curar e ser curado.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/Cover-RMN_Atonement_0001.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A paciência e a perseverança são virtudes espirituais indispensáveis.”</p>
+      <span>Conferência Geral, outubro de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/crop-194th_annual_general_conference_russell_m_nelson.jpg" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O Senhor está atento às nossas orações e nos dá força diariamente.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/download.jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos ser instrumentos nas mãos de Deus para promover bondade e justiça.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/FJR5OGKWTBGG7PTM6HTGUOGPGI.avif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A fé em Cristo nos dá poder para transformar vidas, inclusive a nossa.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (1).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A gratidão deve ser cultivada todos os dias, mesmo nas pequenas coisas.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (2).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O amor de Deus é constante e nos fortalece em todas as circunstâncias.”</p>
+      <span>Conferência Geral, outubro de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (3).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Cada ato de serviço, por menor que pareça, é valioso aos olhos de Deus.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (4).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“O estudo das escrituras nos ajuda a discernir a verdade e a viver retamente.”</p>
+      <span>Conferência Geral, abril de 2017</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (5).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Devemos sempre buscar a orientação do Espírito Santo em nossas decisões.”</p>
+      <span>Conferência Geral, abril de 2018</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (6).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“A vida com propósito nos permite sentir alegria verdadeira e duradoura.”</p>
+      <span>Conferência Geral, abril de 2019</span>
+    </div>
+  </div>
+
+  <div class="citacao">
+    <img src="photos/images (7).jfif" alt="Imagem inspiradora" class="quote-image">
+    <div class="quote-content">
+      <p>“Agora é o momento para você e para mim nos prepararmos para a Segunda Vinda de nosso Senhor e Salvador, Jesus Cristo.”</p>
+      <span>Conferência Geral, abril de 2020</span>
+    </div>
   </div>
 
 </body>
