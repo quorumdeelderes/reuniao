@@ -64,18 +64,38 @@
         text-align: center;
       }
     }
+    .quote-content .share-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
     .quote-content button {
-      background-color: #25d366;
       color: white;
       border: none;
       padding: 8px 12px;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
       font-size: 0.9em;
+      transition: background-color 0.3s;
     }
-    .quote-content button:hover {
+    .share-whatsapp {
+      background-color: #25d366;
+    }
+    .share-whatsapp:hover {
       background-color: #128c7e;
+    }
+    .share-facebook {
+      background-color: #1877f2;
+    }
+    .share-facebook:hover {
+      background-color: #166fe5;
+    }
+    .share-instagram {
+      background-color: #e4405f;
+    }
+    .share-instagram:hover {
+      background-color: #d6336c;
     }
   </style>
 </head>
@@ -893,21 +913,71 @@
 
 <script>
 document.querySelectorAll('.quote-content').forEach(content => {
-  const btn = document.createElement('button');
-  btn.className = 'share-btn';
-  btn.textContent = 'Compartilhar no WhatsApp';
-  content.appendChild(btn);
+  const buttonsContainer = document.createElement('div');
+  buttonsContainer.className = 'share-buttons';
+
+  // WhatsApp button
+  const whatsappBtn = document.createElement('button');
+  whatsappBtn.className = 'share-whatsapp';
+  whatsappBtn.textContent = 'WhatsApp';
+  buttonsContainer.appendChild(whatsappBtn);
+
+  // Facebook button
+  const facebookBtn = document.createElement('button');
+  facebookBtn.className = 'share-facebook';
+  facebookBtn.textContent = 'Facebook';
+  buttonsContainer.appendChild(facebookBtn);
+
+  // Instagram button
+  const instagramBtn = document.createElement('button');
+  instagramBtn.className = 'share-instagram';
+  instagramBtn.textContent = 'Instagram';
+  buttonsContainer.appendChild(instagramBtn);
+
+  content.appendChild(buttonsContainer);
 });
 
-document.querySelectorAll('.share-btn').forEach(btn => {
+document.querySelectorAll('.share-whatsapp').forEach(btn => {
   btn.addEventListener('click', function() {
-    const quote = this.parentElement.querySelector('p').textContent;
+    const content = this.closest('.quote-content');
+    const quote = content.querySelector('p').textContent;
     const author = " - Presidente Russell M. Nelson";
-    const source = " (" + this.parentElement.querySelector('span').textContent + ")";
+    const source = " (" + content.querySelector('span').textContent + ")";
     const link = "\n\nVeja mais citações do presidente em https://quorumdeelderes.github.io/reuniao/aulas/presNelson.html";
     const fullMessage = quote + author + source + link;
     const url = 'https://wa.me/?text=' + encodeURIComponent(fullMessage);
     window.open(url, '_blank');
+  });
+});
+
+document.querySelectorAll('.share-facebook').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href);
+    window.open(url, '_blank');
+  });
+});
+
+document.querySelectorAll('.share-instagram').forEach(btn => {
+  btn.addEventListener('click', async function() {
+    const content = this.closest('.quote-content');
+    const quote = content.querySelector('p').textContent;
+    const author = " - Presidente Russell M. Nelson";
+    const source = " (" + content.querySelector('span').textContent + ")";
+    const link = "\n\nVeja mais citações do presidente em https://quorumdeelderes.github.io/reuniao/aulas/presNelson.html";
+    const fullMessage = quote + author + source + link;
+    try {
+      await navigator.clipboard.writeText(fullMessage);
+      alert('Texto copiado! Cole no Instagram.');
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = fullMessage;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('Texto copiado! Cole no Instagram.');
+    }
   });
 });
 </script>
