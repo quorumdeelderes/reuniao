@@ -64,6 +64,19 @@
         text-align: center;
       }
     }
+    .quote-content button {
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    .quote-content button:hover {
+      background-color: #128c7e;
+    }
   </style>
 </head>
 <body>
@@ -877,5 +890,25 @@
     </div>
   </div>
 
+<script>
+document.querySelectorAll('.quote-content').forEach(content => {
+  const btn = document.createElement('button');
+  btn.className = 'share-btn';
+  btn.textContent = 'Compartilhar no WhatsApp';
+  content.appendChild(btn);
+});
+
+document.querySelectorAll('.share-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const quote = this.parentElement.querySelector('p').textContent;
+    const author = " - Presidente Russell M. Nelson";
+    const source = " (" + this.parentElement.querySelector('span').textContent + ")";
+    const link = "\n\nVeja mais citações do presidente em https://quorumdeelderes.github.io/reuniao/aulas/presNelson.html";
+    const fullMessage = quote + author + source + link;
+    const url = 'https://wa.me/?text=' + encodeURIComponent(fullMessage);
+    window.open(url, '_blank');
+  });
+});
+</script>
 </body>
 </html>
